@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.hillel.workpiece.VacancyDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Chief Engineer"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="2500$"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivCompanyIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/tvPosition"
+        android:src="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/tvDateOfDepartureField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPosition"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Date of departure" />
+
+    <TextView
+        android:id="@+id/tvDateOfDeparture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPosition"
+        android:layout_toRightOf="@id/tvDateOfDepartureField"
+        android:text="30.08.2016"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTypeOfVesselField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDateOfDepartureField"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Type of vessel" />
+
+    <TextView
+        android:id="@+id/tvTypeOfVessel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDateOfDeparture"
+        android:layout_toRightOf="@id/tvTypeOfVesselField"
+        android:text="Dry Cargo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEnglishLevelField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTypeOfVesselField"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="English level" />
+
+    <TextView
+        android:id="@+id/tvEnglishLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTypeOfVessel"
+        android:layout_toRightOf="@id/tvEnglishLevelField"
+        android:text="Good"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCompanyField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEnglishLevelField"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Company" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEnglishLevel"
+        android:layout_toRightOf="@id/tvCompanyField"
+        android:text="Marlow Navigation"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNavigationAreaField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompanyField"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Navigation area" />
+
+    <TextView
+        android:id="@+id/tvNavigationArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompany"
+        android:layout_toRightOf="@id/tvNavigationAreaField"
+        android:text="Mediterranean Sea, Black Sea"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvYearOfBuiltField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNavigationAreaField"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Year of built" />
+
+    <TextView
+        android:id="@+id/tvYearOfBuilt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNavigationArea"
+        android:layout_toRightOf="@id/tvYearOfBuiltField"
+        android:text="2001"
+        android:textStyle="bold" />
+
+</RelativeLayout>
