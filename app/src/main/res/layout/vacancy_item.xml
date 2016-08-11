@@ -3,101 +3,57 @@
     android:id="@+id/rlVacancy"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
-
-    <TextView
-        android:id="@+id/tvPosition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Chief Engineer"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvSalary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text="2500$"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+    android:padding="@dimen/activity_horizontal_margin">
 
     <ImageView
         android:id="@+id/ivCompanyIcon"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_below="@id/tvPosition"
-        android:src="@android:drawable/ic_media_play" />
+        style="@style/Icon.Small"
+        android:layout_alignBottom="@id/tvDateOfDepartureField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/tvPosition" />
 
     <TextView
-        android:id="@+id/tvDateOfDepartureField"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvPosition"
-        android:layout_toRightOf="@id/ivCompanyIcon"
-        android:text="Date of departure" />
-
-    <TextView
-        android:id="@+id/tvDateOfDeparture"
+        android:id="@+id/tvPosition"
+        style="@style/Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvPosition"
-        android:layout_toRightOf="@id/tvDateOfDepartureField"
-        android:text="30.08.2016"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvTypeOfVesselField"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvDateOfDepartureField"
         android:layout_toRightOf="@id/ivCompanyIcon"
-        android:text="Type of vessel" />
+        android:text="Chief Engineer" />
 
     <TextView
-        android:id="@+id/tvTypeOfVessel"
-        android:layout_width="match_parent"
+        android:id="@+id/tvSalary"
+        style="@style/Subhead.Light"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvDateOfDeparture"
-        android:layout_toRightOf="@id/tvTypeOfVesselField"
-        android:text="Dry Cargo"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvEnglishLevelField"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvTypeOfVesselField"
-        android:layout_toRightOf="@id/ivCompanyIcon"
-        android:text="English level" />
-
-    <TextView
-        android:id="@+id/tvEnglishLevel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvTypeOfVessel"
-        android:layout_toRightOf="@id/tvEnglishLevelField"
-        android:text="Good"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvCompanyField"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvEnglishLevelField"
-        android:layout_toRightOf="@id/ivCompanyIcon"
-        android:text="Company" />
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/tvPosition"
+        android:text="2500$" />
 
     <TextView
         android:id="@+id/tvCompany"
+        style="@style/Subhead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvEnglishLevel"
-        android:layout_toRightOf="@id/tvCompanyField"
-        android:text="Marlow Navigation"
-        android:textStyle="bold" />
+        android:layout_below="@id/tvPosition"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Marlow Navigation" />
+
+    <TextView
+        android:id="@+id/tvDateOfDepartureField"
+        style="@style/Subhead.Light.Param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompany"
+        android:layout_toRightOf="@id/ivCompanyIcon"
+        android:text="Departure:" />
+
+    <TextView
+        android:id="@+id/tvDateOfDeparture"
+        style="@style/Subhead.Light.Value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompany"
+        android:layout_toRightOf="@id/tvDateOfDepartureField"
+        android:text="Jan 19, 2016" />
 
 </RelativeLayout>

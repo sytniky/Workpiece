@@ -3,11 +3,12 @@ package edu.hillel.workpiece;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
-
 import java.util.LinkedList;
 import java.util.List;
 import edu.hillel.workpiece.adapter.VacancyAdapter;
@@ -18,11 +19,17 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
 
     List<Vacancy> mVacancyData;
     VacancyAdapter mVacancyAdapter;
+    Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vacancies);
+
+        mToolbar = (Toolbar) findViewById(R.id.tbToolbar);
+        mToolbar.setTitle(R.string.vacancies_activity_toolbar_title);
+        mToolbar.setNavigationIcon(R.drawable.ic_menu);
+        setSupportActionBar(mToolbar);
 
         initVacancies();
 
@@ -31,6 +38,22 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         mVacancyAdapter = new VacancyAdapter(this, mVacancyData);
         lvVacacies.setAdapter(mVacancyAdapter);
         lvVacacies.setOnItemClickListener(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.vacancies_activity_action, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.itmFavorite:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
@@ -45,10 +68,10 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         mVacancyData = new LinkedList<>();
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_info,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Engineer",
-                        "30.07.2016",
+                        "Jan 20, 2016",
                         "Dry Cargo",
                         "Good",
                         2500,
@@ -63,7 +86,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Cook",
                         "30.07.2016",
@@ -81,7 +104,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Master",
                         "30.07.2016",
@@ -99,7 +122,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_info,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Engineer",
                         "30.07.2016",
@@ -117,7 +140,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Cook",
                         "30.07.2016",
@@ -135,7 +158,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Master",
                         "30.07.2016",
@@ -153,7 +176,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_info,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Engineer",
                         "30.07.2016",
@@ -171,7 +194,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Cook",
                         "30.07.2016",
@@ -189,7 +212,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Master",
                         "30.07.2016",
@@ -207,7 +230,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_info,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Engineer",
                         "30.07.2016",
@@ -225,7 +248,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Chief Cook",
                         "30.07.2016",
@@ -243,7 +266,7 @@ public class VacanciesActivity extends AppCompatActivity implements AdapterView.
         );
         mVacancyData.add(
                 new Vacancy(
-                        android.R.drawable.ic_dialog_alert,
+                        R.drawable.ic_marlow_navigation,
                         "Marlow Navigation",
                         "Master",
                         "30.07.2016",

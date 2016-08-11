@@ -2,9 +2,9 @@ package edu.hillel.workpiece;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import edu.hillel.workpiece.model.Vacancy;
 
 public class VacancyDetailsActivity extends AppCompatActivity {
@@ -12,10 +12,17 @@ public class VacancyDetailsActivity extends AppCompatActivity {
     public static final String ACTION = "edu.hillel.workpiece.action.GET_VACANCY_DETAILS";
     public static final String EXTRAS_VACANCY = "extras_vacancy";
 
+    Toolbar mToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vacancy_details);
+
+        mToolbar = (Toolbar) findViewById(R.id.tbToolbar);
+        mToolbar.setTitle("Chief Engineer");
+        mToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        setSupportActionBar(mToolbar);
 
         TextView tvPosition = (TextView) findViewById(R.id.tvPosition);
         TextView tvSalary = (TextView) findViewById(R.id.tvSalary);

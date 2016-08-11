@@ -1,11 +1,57 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Toolbar" parent="">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Title" parent="@android:style/TextAppearance.Material.Title" />
+
+    <style name="Title.Accent" parent="@style/Title">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Subhead" parent="@android:style/TextAppearance.Material.Subhead" />
+
+    <style name="Icon">
+        <item name="android:src">@drawable/ic_marlow_navigation</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="Icon.Small" parent="@style/Icon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="Icon.Medium" parent="@style/Icon">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="Subhead.Light" parent="@style/Subhead">
+        <item name="android:textColor">@color/abc_secondary_text_material_light</item>
+    </style>
+
+    <style name="Subhead.Light.Param" parent="@style/Subhead.Light">
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin_small</item>
+    </style>
+
+    <style name="Subhead.Light.Value" parent="@style/Subhead.Light" />
+
+    <style name="Body1" parent="@android:style/TextAppearance.Material.Body1" />
+
+    <style name="Body1.Value" parent="@style/Body1">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin_small</item>
+    </style>
+
+    <style name="Body2" parent="@android:style/TextAppearance.Material.Body2" />
 </resources>

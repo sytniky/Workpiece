@@ -17,11 +17,12 @@
         </activity>
         <activity android:name=".VacancyDetailsActivity">
             <intent-filter>
-                <action android:name="edu.hillel.workpiece.action.GET_VACANCY_DETAILS"></action>
+                <action android:name="edu.hillel.workpiece.action.GET_VACANCY_DETAILS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".VacancySearchActivity"></activity>
     </application>
 
 </manifest>
