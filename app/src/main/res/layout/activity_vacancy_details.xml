@@ -45,87 +45,71 @@
 
     <TextView
         android:id="@+id/tvDateOfDepartureField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Body1.Param"
+        android:layout_alignTop="@+id/tvDateOfDeparture"
         android:layout_below="@id/ivCompanyIcon"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="Date of departure:" />
 
     <TextView
-        android:id="@+id/tvDateOfDeparture"
+        android:id="@id/tvDateOfDeparture"
         style="@style/Body1.Value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/tvDateOfDepartureField"
         android:layout_below="@id/tvSalary"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_toRightOf="@id/tvDateOfDepartureField"
-        android:gravity="bottom"
         android:text="Jan 19, 2016" />
 
     <TextView
         android:id="@+id/tvTypeOfVesselField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Body1.Param"
+        android:layout_alignTop="@+id/tvTypeOfVessel"
         android:layout_below="@id/tvDateOfDepartureField"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="Type of vessel:" />
 
     <TextView
-        android:id="@+id/tvTypeOfVessel"
+        android:id="@id/tvTypeOfVessel"
         style="@style/Body1.Value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@id/tvDateOfDeparture"
         android:layout_toRightOf="@id/tvTypeOfVesselField"
         android:text="Dry Cargo" />
 
     <TextView
         android:id="@+id/tvEnglishLevelField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Body1.Param"
+        android:layout_alignTop="@+id/tvEnglishLevel"
         android:layout_below="@id/tvTypeOfVesselField"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="English level:" />
 
     <TextView
-        android:id="@+id/tvEnglishLevel"
+        android:id="@id/tvEnglishLevel"
         style="@style/Body1.Value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@id/tvTypeOfVessel"
         android:layout_toRightOf="@id/tvEnglishLevelField"
         android:text="Good" />
 
     <TextView
         android:id="@+id/tvNavigationAreaField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Body1.Param"
+        android:layout_alignTop="@+id/tvNavigationArea"
         android:layout_below="@id/tvEnglishLevelField"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="Navigation area:" />
 
     <TextView
-        android:id="@+id/tvNavigationArea"
+        android:id="@id/tvNavigationArea"
         style="@style/Body1.Value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@id/tvEnglishLevel"
         android:layout_toRightOf="@id/tvNavigationAreaField"
         android:text="Mediterranean Sea, Black Sea" />
 
     <TextView
         android:id="@+id/tvYearOfBuiltField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Body1.Param"
+        android:layout_alignTop="@+id/tvYearOfBuilt"
         android:layout_below="@id/tvNavigationAreaField"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="Year of built:" />
 
     <TextView
-        android:id="@+id/tvYearOfBuilt"
+        android:id="@id/tvYearOfBuilt"
         style="@style/Body1.Value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@id/tvNavigationArea"
         android:layout_toRightOf="@id/tvYearOfBuiltField"
         android:text="2001" />

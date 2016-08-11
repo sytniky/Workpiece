@@ -20,7 +20,7 @@ public class VacancyDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vacancy_details);
 
         mToolbar = (Toolbar) findViewById(R.id.tbToolbar);
-        mToolbar.setTitle("Chief Engineer");
+        mToolbar.setTitle("Vacancy Details");
         mToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         setSupportActionBar(mToolbar);
 
